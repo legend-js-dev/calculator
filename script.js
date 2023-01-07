@@ -7,7 +7,6 @@ function enter(str) {
 }
 
 function clearAll() {
-  console.log("eh")
   typed.innerHTML = "0";
   operation.innerHTML = "";
 }
@@ -19,7 +18,6 @@ function back() {
 
 function negate() {
   let matches = typed.innerHTML.match(/[0-9]*\.?[0-9]+$/);
-  console.log(matches)
   typed.innerHTML = typed.innerHTML.split(matches[0]).join("(-" + matches[0] + ")");
 }
 
