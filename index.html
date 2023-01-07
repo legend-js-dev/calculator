@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>legendjs | calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.0/math.js" integrity="sha512-PRRHSwgn8QJinp43y5B698YK/FApqSvwmd7kVu8NWMksCl/3daKnNbPNWPuGKDrpIIb+0Dg5W55VSbZi0QG60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div class="calc-body">
+<div class="calc-screen">
+    <div id="calc-operation"></div>
+    <div id="calc-typed">0</div>
+</div>
+<div class="calc-button-row">
+    <button class="ac" onclick="clearAll()">AC</button>
+    <button onclick="negate()" class="opt">&#43;&#47;&#8722;</button>
+    <button onclick="enter('%')" class="opt">&#37;</button>
+    <button onclick="enter('/')" class="opt">&#247;</button>
+    <button onclick="enter(7)">7</button>
+    <button onclick="enter(8)">8</button>
+    <button onclick="enter(9)">9</button>
+    <button onclick="enter('*')" class="opt">&#215;</button>
+    <button onclick="enter(4)">4</button>
+    <button onclick="enter(5)">5</button>
+    <button onclick="enter(6)">6</button>
+    <button onclick="enter('-')" class="opt">&#8722;</button>
+    <button onclick="enter(1)">1</button>
+    <button onclick="enter(2)">2</button>
+    <button onclick="enter(3)">3</button>
+    <button onclick="enter('+')" class="opt">&#43;</button>
+    <button onclick="enter(0)">0</button>
+    <button onclick="enter('.')">.</button>
+    <button onclick="back()">&#9003;</button>
+    <button onclick="equals()" class="opt">&#61;</button>
+</div>
+</div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
